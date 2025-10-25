@@ -1,0 +1,129 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.main-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+form input, form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Category Cards */
+.category-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.category-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.category-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.category-card p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #007bff;
+  margin-top: 8px;
+}
+
+/* Expense History */
+.expenses-history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.expenses-history li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.expenses-history li button {
+  margin-left: 5px;
+  background: #dc3545;
+}
+
+.expenses-history li button:first-child {
+  background: #28a745;
+}
+
+/* Money Split */
+.money-split {
+  margin-top: 30px;
+}
+
+.money-split input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.money-split ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.money-split li {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}

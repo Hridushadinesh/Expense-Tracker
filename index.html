@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <h1>💰 Expense Tracker</h1>
+
+    <!-- Add Expense Form -->
+    <section class="form-section">
+      <h2>Add Expense</h2>
+      <form id="expense-form">
+        <input type="text" id="expense-name" placeholder="Expense Name" required>
+        <input type="number" id="expense-amount" placeholder="Amount" required>
+        <select id="expense-category" required>
+          <option value="">Select Category</option>
+          <option value="Food & Drinks">🍔 Food & Drinks</option>
+          <option value="Transport">🚗 Transport</option>
+          <option value="Entertainment">🎬 Entertainment</option>
+          <option value="Utilities">💡 Utilities</option>
+          <option value="Health & Fitness">💪 Health & Fitness</option>
+          <option value="Home">🏠 Home</option>
+          <option value="Groceries">🛒 Groceries</option>
+          <option value="Shopping">🛍 Shopping</option>
+          <option value="Others">📦 Others</option>
+        </select>
+        <input type="text" id="expense-paidby" placeholder="Paid By (e.g., Achu)">
+        <input type="text" id="expense-sharedwith" placeholder="Shared With (comma separated)">
+        <button type="submit">Add Expense</button>
+      </form>
+    </section>
+
+    <!-- Total -->
+    <section class="summary">
+      <h2>Total Expenses: $<span id="total-amount">0.00</span></h2>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+      <h2>Categories</h2>
+      <div class="category-cards"></div>
+    </section>
+
+    <!-- Expense History -->
+    <section class="expenses-history">
+      <h2>Expense History</h2>
+      <ul id="expense-list"></ul>
+    </section>
+
+    <!-- Money Split -->
+    <section class="money-split">
+      <h2>Money Split</h2>
+      <input type="text" id="members" placeholder="Enter members (comma separated)">
+      <button onclick="splitTotal()">Calculate Split</button>
+      <ul id="split-list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
